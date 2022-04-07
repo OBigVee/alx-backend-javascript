@@ -1,3 +1,4 @@
+//Return a Promise using this prototype function getResponseFromAPI()
 export default function getFullResponseFromAPI(success) {
     return new Promise((resolve, reject) => {
         if (success) {
