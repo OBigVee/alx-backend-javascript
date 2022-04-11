@@ -7,17 +7,17 @@ export default class Pricing {
     get amount() {
         return this._amount;
     }
-    set setAmount(val) {
+    set amount(val) {
         if (typeof(val) !== 'number') {
             throw Error("Amount type is not number");
         } else {
             this_.amount = val;
         }
     }
-    get getCurrency() {
+    get currency() {
         return this._currency;
     }
-    set setCurrency(val) {
+    set currency(val) {
         if (typeof(val) !== 'Currency') {
             throw Error("not of the type Currency");
         } else {
