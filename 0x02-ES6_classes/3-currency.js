@@ -3,10 +3,10 @@ export default class Currency {
         this._code = code;
         this._name = name;
     }
-    get getCode() {
+    get code() {
         return this._code;
     }
-    set setCode(val) {
+    set code(val) {
         if (typeof(val) !== 'string') {
             throw Error("code must be String");
         } else {
@@ -14,10 +14,10 @@ export default class Currency {
         }
     }
 
-    get getName() {
+    get name() {
         return this._name;
     }
-    set setName(name) {
+    set name(name) {
 
         if (typeof(name) !== 'string') {
             throw Error("name must be a string");
