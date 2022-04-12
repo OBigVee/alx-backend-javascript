@@ -13,7 +13,7 @@
 export default function updateStudentGradeByCity(studentArray, city, newGrade) {
     const info = studentArray.map((student) => {
         const grade = newGrade.filter((studentGrade) => studentGrade.studentId ===
-            studentArray.id).map((selectInfo) => selectInfo.grade)[0];
+            student.id).map((selectInfo) => selectInfo.grade)[0];
         student['grade'] = grade || 'N/A';
         return student;
     });
