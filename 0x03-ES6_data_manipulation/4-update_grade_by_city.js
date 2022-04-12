@@ -5,7 +5,7 @@
 // as parameters.
 // newGrades is an array of objects with this format:
 
-//     {
+//    const newGrade = {
 //         studentId: 31,
 //         grade: 78,
 //     }
