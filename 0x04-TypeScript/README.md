@@ -1,5 +1,5 @@
 # TypeScript
-
+![images](images/Ts.png)
 ### Resources
 **Read or Watch**
 * [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
