@@ -4,7 +4,8 @@
  * @returns {boolean}
  */
 function displayMessage(str) {
-    return  process.stdout.write(str+"\n");
+    console.log(str);
+    //return  process.stdout.write(str+"\n");
 }
 
 module.exports = displayMessage;
