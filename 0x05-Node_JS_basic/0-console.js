@@ -3,6 +3,8 @@
  * @param str
  * @returns {boolean}
  */
-module.exports = function displayMessage(str) {
+function displayMessage(str) {
     return  process.stdout.write(str+"\n");
 }
+
+module.exports = displayMessage;
