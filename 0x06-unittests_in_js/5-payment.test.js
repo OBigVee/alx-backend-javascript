@@ -5,19 +5,13 @@ const { expect } = require('chai')
 
 describe('wrap existing method', ()=>{
     let sandbox
-
-
     beforeEach(()=>{
-        if(!sandbox){
-            sandbox = sinon.spy(console)
-        }
-        // sandbox.spy(Utils)
+        if(!sandbox) sandbox = sinon.spy(console)
     })
     afterEach(()=>{
         sandbox.log.resetHistory()
     })
     it('it should inspect and sendPaymentRequestToAPI with 100, and 20',()=>{
-
         sendPaymentRequestToApi(100,20)
         expect(sandbox.log.calledWith('The total is: 120')).to.be.true
         expect(sandbox.log.calledOnce).to.be.true
@@ -27,7 +21,6 @@ describe('wrap existing method', ()=>{
         sendPaymentRequestToApi(10, 10)
         expect(sandbox.log.calledWith('The total is: 20')).to.be.true
         expect(sandbox.log.calledOnce).to.be.true
-
     })
 })
 
