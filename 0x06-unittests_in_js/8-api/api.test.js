@@ -1,7 +1,7 @@
 const { expect } = require('chai')
 const request = require('request')
-const sinon = require('sinon')
-const app = require('./api')
+// const sinon = require('sinon')
+// const app = require('./api')
 
 
 describe('Index page',()=>{
@@ -13,6 +13,8 @@ describe('Index page',()=>{
             done()
         })
     })
+
+
     // it('should ouput log to the console', function () {
     //     const sandbox = sinon.spy(console)
     //     app()
