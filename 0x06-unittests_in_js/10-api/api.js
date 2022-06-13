@@ -23,7 +23,7 @@ app.get('/available_payments',(req,res)=>{
 })
 
 app.post('/login',(req,res)=>{
-    let userName = ''
+    let userName
     if(req.body){
         userName = req.body.userName
     }
