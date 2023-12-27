@@ -17,7 +17,6 @@ export default class Currency {
       throw new TypeError(`${this._code} must be a valid string`)
     }
     this._code = val;
-    return this._code;
   }
 
   get name () {
@@ -29,7 +28,6 @@ export default class Currency {
       throw new TypeError(`${newName} must be a string`)
     }
     this._name = newName;
-    return this._name;
   }
 
   displayFullCurrency () {
