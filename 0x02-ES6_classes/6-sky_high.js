@@ -17,12 +17,6 @@ export default class SkyHighBuilding extends Building {
     return this._floors
   }
 
-  set floors (nf) {
-    if (typeof (nf) !== 'number') {
-      throw new Error('floor must be day')
-    }
-    this._floors = nf
-  }
 
   evacuationWarningMessage () {
     return `Evacuate slowly the ${this._floors} floors.`
