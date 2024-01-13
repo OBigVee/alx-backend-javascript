@@ -1,0 +1,46 @@
+export interface MajorCredits{
+    credits:number & {__brand:'MajorCredits.credits'};
+}
+
+export interface MinorCredits{
+    credits: number & {__brand:'MinorCredits.credits'};
+}
+
+export function sumMajorCredits(subject1:MajorCredits):MajorCredits{
+    return {credits:subject1.credits} as MajorCredits;
+}
+
+export function sumMinorCredits(subject2:MinorCredits):MinorCredits{
+    return {credits:subject2.credits} as MinorCredits;
+}
+
+/** 
+ *  *RESOURCE LINK TO UNDERSTANDING NOMINAL TYPING
+ * https://www.typescriptlang.org/play?ssl=28&ssc=39&pln=28&pc=48#code/
+ * PTAEEFQOwewWwJZQIYBtQBcCeAHApqAM5aEZ5yhx7JSGYAWyGo1AxvZrgQnQK5QIAjrzw
+ * BYAFAhQNACYsAbniigEAM0746jRQwKFkVUDKbJQWGL1CsasZskKEEAcygSpyVgCcYDjXk
+ * IAdBJuYAAqXADKXgg4GADkdNj4RCRkFDxEGJ68rBi8nmgANKAA7vQI7JTUtCEq6hj0BEn
+ * cdISM+HKoCADWBKYyOd3FCPF0-YMBoACS6si1TjA+BIxjqOgNegZ9GFkIAEa8ZGNjRoPF
+ * G8oj0qiEMLUZ46zdkwCaFlY0oKjUnspwMJ5lnhAQAuFgADwMOG+INI2Vy+TQAFokkgnMF
+ * JGFynRrMptAQZAUSnsPN1CMVVACIVDvrpAdJ6dZCP5amVgX1Mp40aAqVBeHA9sCPnjkD
+ * pCPhWAg0FYYFAyOC7FA5OZeLUZLK4swSjRmBgYAohXBkL1dKB5GgRIkCrRVMCCntvpMA
+ * GIA2p4SFwaF4EEhWpI0CgACqzM80ygOEOoAiuygTjoAAp+PpbQBKP0B0LWwioJgIWVR
+ * mNx9NBkPTGRKDBqCq5-MAOX5gs8hGL4FYrH8dFCMF6NXEtQA6gRcaAnHhmP9SDz6o0zR
+ * aCKpvBRTLBECh1lxasRSORSiMOKYujtaXsrjB1O6sqZWDBy0E+5jQIO4vSFty9aBeMzp
+ * Jc5cDmbk8zXPxihKPdpA-ARhDEB9r1oS8kGYJBTUpTwKDPcCcG8fBPGwD41jwOQAH1CL
+ * 2a05HjBoeHuHFZUUOVAJTUpykqI1ejoK4EE9HxHAdJp9XsRwXGkWpYFQ6U4TffjQAANT
+ * QBBjDIGQpnDQ5oy5WM7wkZoZLkhSCOUiMMDU7kAF5OW5AAyUAAG9QGI0jZDBAAiYMhQM
+ * yMAAUfGYWSugUwCnNAABfABuDEpEHXc1g-L9TFUfgAPzd9LxtAEl3M2NMDuB9TF8+SmH
+ * 0lSjMLUB-QOXUZxwGAENKAEGmgGBK1jaiGCYUo8GfAgACtP2YQiyDWNFCNAcJ8CiLlY
+ * laxDRkwbI8E08RYMnc0-IK1zPHc5gzPjJBDLBCTY0YkyAD4bIkAMluYRxPW+PK9KUorQDM3b
+ * DgCQFoQ8PB42AAAdAAeYAnGKJzABMiJyUzC8QA0BPJfiITivTugqHsM6Q6CRxTNuM2NIdC8
+ * KwFrGASna4UrEBArQHiqBEtoJiKg4UDotlVAsGkNs8FiWoLFDKA8GJlckGlZpilkBqKoIUdeY
+ * KdADqcPwFsu0BMIQ2stie0B4xQKgwQxwrDOxpwjtO6zzplWgYEdVAYCcTWtghiQ8fvKQXVDd0a
+ * TwYpGkBBIiHgAgk2QW0VEehd4HAz9gWKV9mofBpvF4JwOA2WdVr1UNRYuUBBW5NArZKAisqzgh
+ * ld-GQfXvRWXq20AnLQYEMHjOI9hgPY9lZjBkF4wg4hTJzIcVlb8sxx6zMHvT1s2naivt8QS4wV
+ * WqHjMfkc2mfagAeWUZPGq90BGCVYocAEt8Z34JFl8UjK5b1Wo54XghGfQAoeA5a9PQQb5Xc8bxP
+ * HLiQ762FPQya8HxvEsMOcmcgrzwEwngRotAEA6BgIoTw8gEB8ynLoNUahbSAjlKUZAJBC5eGoGQ
+ * Bqq4hZcHJN+OQGwECeFqJecsSIzyqHYlvbEoAAAsAAGHhMo4BUHwVbTKABxEYAAJXgewVAOBEOX
+ * EAtR6A7BwIQEEIAnB7mkQEN+wAACyFRvC3FUBgYAo08DjRiKYnghBLTAAAEw8Psb6HKSoGAZCqp
+ * OB4I5yZXX5EaTwWAFHACUSotRIBEDsDQAALzrk8BAOj4DAAFmuFEuA0RIiQGkzQ0RYghPEEAA
+ */
