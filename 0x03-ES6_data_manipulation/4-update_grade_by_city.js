@@ -10,6 +10,8 @@ const updateStudentGradeByCity = (studentArray, city, newGrade) => {
      * @city:
      * @newGrade:
      */
+    if (!Array.isArray(studentArray)) return [];
+    
   const info = studentArray.map((student) => {
     const grade = newGrade.filter((studentGrade) =>
       studentGrade.studentId === student.id).map((SelectInfo) => SelectInfo.grade)[0]
