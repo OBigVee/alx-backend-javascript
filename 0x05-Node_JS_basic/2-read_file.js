@@ -25,24 +25,24 @@ function countStudents (dbPath) {
     throw new Error('Cannot load the database')
   }
   // read file
-  const data1 = fs.readFileSync(dbPath, 'utf-8')// .toString('utf-8').trim().split('\n')
-  console.log(`${data1}\n`)
+  const data = fs.readFileSync(dbPath, 'utf-8').toString('utf-8').trim().split('\n')
+  // console.log(`The raw data ${data1}\n`)
 
-  const data2 = data1.toString('utf-8')
-  console.log(`${data2}\n`)
+  // const data2 = data1.toString('utf-8')
+  // console.log(`The raw data toString ${data2}\n`)
 
-  const data3 = data2.trim()
-  console.log(`${data3}\n`)
+  // const data3 = data2.trim()
+  // console.log(`trimmed data${data3}\n`)
 
-  const data4 = data3.split('\n')
-  console.log(`${data4}\n`)
+  // const data4 = data3.split('\n')
+  // console.log(`splited data ${data4}\n`)
 
   // get the total number of students
-  const nOfStudents = data4.length - 1
+  const nOfStudents = data.length - 1
   console.log(`Number of students: ${nOfStudents}`)
 
   // get each column name(field)
-  const fieldName = data4[0].split(',')
+  const fieldName = data[0].split(',')
 
   // get the names and info of all students -> this is a list in the form [`firstname`, `lastname`, `age`]
 
@@ -50,7 +50,7 @@ function countStudents (dbPath) {
 
   // collect each student record from the table (data)
 
-  for (const student of data4.slice(1)) {
+  for (const student of data.slice(1)) {
     // each student record collected
     const sRecord = student.split(',')
     const sNameAge = sRecord.slice(0, sRecord.length - 1)
