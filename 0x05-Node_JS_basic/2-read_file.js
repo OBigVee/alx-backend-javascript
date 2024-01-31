@@ -69,4 +69,4 @@ function countStudents (dbPath) {
   }
 }
 
-module.exports = countStudents
+module.exports = countStudents()
