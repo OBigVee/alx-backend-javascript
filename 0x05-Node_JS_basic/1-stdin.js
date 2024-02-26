@@ -1,6 +1,6 @@
-const intro = "Welcome to Holberton School, what is your name?\n";
+const introduction = "Welcome to Holberton School, what is your name?\n";
 const outro = "This important software is now closing\n"
-process.stdout.write(intro)
+process.stdout.write(introduction)
 
 process.stdin.setEncoding('utf-8')
 
