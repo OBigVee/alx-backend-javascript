@@ -69,7 +69,7 @@ function countStudents (dbPath) {
 
   for (const [field, nameAge] of Object.entries(obj)) {
     const studentNames = nameAge.map((student) => student.firstname).join(',');
-    console.log(`Number of students in ${field}: ${nameAge.length}. List: ${studetNames}`);
+    console.log(`Number of students in ${field}: ${nameAge.length}. List: ${studentNames}`);
   }
 }
 
